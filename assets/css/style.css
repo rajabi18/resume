@@ -868,3 +868,104 @@ html[dir="rtl"] [dir="ltr"] {
     margin-left: auto;
   }
 }
+
+
+/* Theme-aware interface icons */
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.ui-icon {
+  width: 1.2em;
+  height: 1.2em;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.contact-list a,
+.contact-list > div {
+  grid-template-columns: 2.4rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-icon {
+  display: grid;
+  width: 2.4rem;
+  height: 2.4rem;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--brand-deep);
+  background: var(--brand-soft);
+  transition: color var(--transition), background var(--transition), border-color var(--transition);
+}
+
+.contact-list a:hover .contact-icon {
+  border-color: var(--brand);
+  color: var(--white);
+  background: var(--brand-deep);
+}
+
+.contact-copy {
+  display: grid;
+  min-width: 0;
+}
+
+.social-links a,
+.tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.social-links .ui-icon {
+  font-size: 1rem;
+}
+
+.tab .ui-icon {
+  font-size: 1.05rem;
+}
+
+.service-icon {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--border);
+  color: var(--brand-deep);
+  background: var(--brand-soft);
+  font-size: 1.45rem;
+  transition: color var(--transition), background var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.expertise-grid > li:hover .service-icon {
+  border-color: var(--brand);
+  color: var(--white);
+  background: var(--brand-deep);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 420px) {
+  .tab {
+    gap: 0.3rem;
+    padding-inline: 0.6rem;
+  }
+
+  .contact-list a,
+  .contact-list > div {
+    grid-template-columns: 2.15rem minmax(0, 1fr);
+    gap: 0.6rem;
+  }
+
+  .contact-icon {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+}

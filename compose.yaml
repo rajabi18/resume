@@ -11,3 +11,9 @@ services:
     read_only: true
     security_opt:
       - no-new-privileges:true
+    networks:
+      - nginx
+
+networks:
+  nginx:
+    external: true
