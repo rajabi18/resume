@@ -4,11 +4,7 @@ WORKDIR /site
 
 COPY index.html robots.txt sitemap.xml ./
 COPY fa/ ./fa/
-COPY assets/css/style.css ./assets/css/style.css
-COPY assets/js/script.js ./assets/js/script.js
-COPY assets/images/logo.ico ./assets/images/logo.ico
-COPY assets/images/my-avatar.png ./assets/images/my-avatar.png
-COPY assets/fonts/Vazirmatn-Regular.ttf ./assets/fonts/Vazirmatn-Regular.ttf
+COPY assets/ ./assets/
 
 EXPOSE 8080
 
