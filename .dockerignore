@@ -1,0 +1,8 @@
+.git
+.gitignore
+.kiro
+README.md
+compose.yaml
+*.log
+*.back
+.DS_Store
