@@ -6,8 +6,8 @@ services:
     image: abolfazl-rajabi-resume:local
     container_name: abolfazl-rajabi-resume
     restart: unless-stopped
-    ports:
-      - "9545:8080"
+    # ports:
+    #   - "9545:8080"
     read_only: true
     security_opt:
       - no-new-privileges:true
