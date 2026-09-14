@@ -1030,6 +1030,36 @@ html[dir="rtl"] [dir="ltr"] {
   font-size: 1.4rem;
 }
 
+.project-logo {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: var(--brand);
+  transition: transform var(--transition);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.project-logo--shariatyar {
+  -webkit-mask-image: url("../images/shariatyar-icon.png");
+  mask-image: url("../images/shariatyar-icon.png");
+}
+
+.project-logo--operizon {
+  width: 2.2rem;
+  height: 2.2rem;
+  -webkit-mask-image: url("../images/operizon-icon.png");
+  mask-image: url("../images/operizon-icon.png");
+}
+
+.project-card:hover .project-logo {
+  transform: scale(1.08);
+}
+
 .project-content {
   display: flex;
   min-width: 0;
