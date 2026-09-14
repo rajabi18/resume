@@ -7,7 +7,7 @@ services:
     container_name: abolfazl-rajabi-resume
     restart: unless-stopped
     ports:
-      - "${RESUME_BIND:-127.0.0.1}:${RESUME_PORT:-8080}:8080"
+      - "9545:8080"
     read_only: true
     security_opt:
       - no-new-privileges:true
