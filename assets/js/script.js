@@ -51,7 +51,12 @@ if (profileToggle && profileDetails) {
   });
 }
 
-if (year) year.textContent = String(new Date().getFullYear());
+if (year) {
+  const locale = document.documentElement.lang === "fa" ? "fa-IR" : "en-US";
+  year.textContent = new Intl.NumberFormat(locale, { useGrouping: false }).format(
+    new Date().getFullYear(),
+  );
+}
 
 const initialPage = window.location.hash.slice(1);
 if (initialPage === "about" || initialPage === "resume") {

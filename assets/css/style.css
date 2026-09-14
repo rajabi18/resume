@@ -768,3 +768,103 @@ h4 {
     break-inside: avoid;
   }
 }
+
+
+/* Bilingual typography and language navigation */
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../fonts/Vazirmatn-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+html[lang="fa"] {
+  font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
+}
+
+html[lang="fa"] body {
+  letter-spacing: 0;
+}
+
+html[lang="fa"] h1,
+html[lang="fa"] h2,
+html[lang="fa"] h3,
+html[lang="fa"] h4 {
+  letter-spacing: 0;
+  line-height: 1.55;
+}
+
+html[lang="fa"] .eyebrow {
+  letter-spacing: 0;
+}
+
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 0.85rem;
+  padding: 0.2rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--white);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.language-switch a,
+.language-switch span {
+  min-width: 2.7rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 7px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.language-switch [aria-current="page"] {
+  color: var(--white);
+  background: var(--brand-deep);
+}
+
+html[dir="rtl"] .section-header::after {
+  right: 0;
+  left: auto;
+}
+
+html[dir="rtl"] .timeline {
+  margin-right: 0.45rem;
+  margin-left: 0;
+  padding-right: 1.65rem;
+  padding-left: 0;
+}
+
+html[dir="rtl"] .timeline::before {
+  right: 0.3rem;
+  left: auto;
+}
+
+html[dir="rtl"] .timeline > li::before {
+  right: -1.75rem;
+  left: auto;
+}
+
+html[dir="rtl"] .timeline ul {
+  padding-right: 1.2rem;
+  padding-left: 0;
+}
+
+html[dir="rtl"] .tech-stack,
+html[dir="rtl"] [dir="ltr"] {
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  html[dir="rtl"] .profile-summary {
+    text-align: right;
+  }
+
+  html[dir="rtl"] .role {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}

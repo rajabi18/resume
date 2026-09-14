@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Abolfazl Rajabi logo">
+  <defs>
+    <linearGradient id="metal" x1="8" y1="5" x2="54" y2="59" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#9ca9aa"/>
+      <stop offset="0.72" stop-color="#f7ffff"/>
+      <stop offset="1" stop-color="#647274"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#05090a"/>
+  <path
+    d="M32 34C25 34 20 28 20 20S25 7 32 7s12 5 12 13c0 9-8 16-14 23-5 6-9 11-15 11-7 0-11-5-11-11s5-11 11-11c7 0 12 6 17 12 5 6 10 10 16 10 7 0 12-5 12-11s-5-11-12-11c-6 0-11 5-16 12"
+    fill="none"
+    stroke="url(#metal)"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="7"
+  />
+  <path
+    d="M32 34C25 34 20 28 20 20S25 7 32 7s12 5 12 13c0 9-8 16-14 23-5 6-9 11-15 11-7 0-11-5-11-11s5-11 11-11c7 0 12 6 17 12 5 6 10 10 16 10 7 0 12-5 12-11s-5-11-12-11c-6 0-11 5-16 12"
+    fill="none"
+    stroke="#0F8F95"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    filter="url(#glow)"
+  />
+</svg>
